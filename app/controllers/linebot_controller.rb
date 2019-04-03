@@ -34,7 +34,7 @@ class LinebotController < ApplicationController
 
           message = {
             type: 'text',
-            text: messages
+            text: messages.sample
           }
           client.reply_message(event['replyToken'], message)
         end
